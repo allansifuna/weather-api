@@ -1,0 +1,5 @@
+[run]
+omit =
+    weather_api/config/*
+    **/__init__.py
+    manage.py
