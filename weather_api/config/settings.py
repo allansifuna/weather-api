@@ -1,5 +1,4 @@
-"""Django settings for the weather-stats API.
-"""
+"""Django settings for the weather-stats API."""
 
 from __future__ import annotations
 
@@ -107,8 +106,8 @@ if ENVIRONMENT == "production":
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = "DENY"
 
-# Caching 
-REDIS_URL = os.getenv("REDIS_URL") # This has to be set if we are running multi-process using gunicorn
+# Caching
+REDIS_URL = os.getenv("REDIS_URL")  # This has to be set if we are running multi-process using gunicorn
 if REDIS_URL:
     CACHES = {
         "default": {
