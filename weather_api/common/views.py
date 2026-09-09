@@ -17,12 +17,7 @@ _CACHE_CHECK_KEY = "healthz:probe"
 
 
 class HealthCheckView(APIView):
-    """Liveness/readiness probe for load balancers and orchestrators.
-
-    Checks that the database and cache are actually reachable rather than
-    just returning a static 200 -- a process that's up but can't reach its
-    dependencies isn't ready to serve traffic.
-    """
+    """Healthcheck endpoint for checking service, db and cache uptime."""
 
     permission_classes = [AllowAny]
     throttle_classes: list = []

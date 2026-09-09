@@ -1,12 +1,3 @@
-"""Structured access logging with a per-request correlation id.
-
-Every request gets an id (taken from an inbound `X-Request-ID` header if the
-caller/load balancer already set one, otherwise generated) that is echoed
-back in the response and included in the access log line, so a single
-request can be traced through logs even behind a proxy that fans out to
-multiple workers.
-"""
-
 from __future__ import annotations
 
 import logging

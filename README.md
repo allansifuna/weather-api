@@ -45,7 +45,7 @@ Built with production-grade concerns i.e timeouts, retries, a circuit breaker, c
    make runserver
    ```
 
-The API is now live at `http://127.0.0.1:8000/`.
+The API is now live at `http://127.0.0.1:8000/healthz/`.
 
 ## Usage
 
@@ -163,3 +163,7 @@ CI (`.github/workflows/ci.yml`) runs the same lint, format and test steps on eve
 ```bash
 make docker-up
 ```
+
+## AI Usage: Claude
+- Validating design decisions
+- Writting Tests and Documentation
