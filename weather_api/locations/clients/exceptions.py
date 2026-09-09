@@ -1,5 +1,4 @@
-"""Exceptions raised by weather provider clients.
-"""
+"""Exceptions raised by weather provider clients."""
 
 from __future__ import annotations
 
